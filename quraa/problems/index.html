@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إرسال مشكلة الموقع</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #e9ecef;
+    color: #495057;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 32px;
+    color: #343a40;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #6c757d;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button:active {
+    background-color: #004085;
+    transform: translateY(0);
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>صفحة الإبلاغات </h1>
+            <p> اكتب المشكل في الأسفل وسوف يتم حله في اقرب وقت ممكن</p>
+        </header>
+        <main>
+          
+
+              <form id="issue-form" action="https://api.web3forms.com/submit" method="POST">
+           <input type="checkbox" name="botcheck" id="" style="display: none;" />
+            
+    <!-- Replace with your Access Key -->
+    <input type="hidden" name="access_key" value="4baa81da-fae2-498f-9c3a-41c828b47b6e">
+
+                <div class="form-group">
+                    <label for="name">اسم المستخدم:</label>
+                    <input type="text" id="name" name="name" placeholder="الإسم كامل" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">البريد الإلكتروني:</label>
+                    <input type="email" id="email" name="email" placeholder="exampl@mail.com  " required>
+                </div>
+
+                <div class="form-group">
+                    <label for="issue">وصف المشكلة:</label>
+                    <textarea id="issue" name="message" placeholder="وصف المشكلة بشكل مفصل" rows="6" required></textarea>
+                </div>
+
+                <button id="submit" type="submit">إرسال</button>
+                          <p style="font-size:3rem:" id="result"></p>
+           <input type="hidden" name="redirect" value="https://dhiya2007.github.io/done/">
+            </form>
+        </main>
+
+    </div>
+<script>
+  const form = document.getElementById("form");
+const result = document.getElementById("result");
+
+form.addEventListener("submit", function (e) {
+  const formData = new FormData(form);
+  e.preventDefault();
+  var object = {};
+  formData.forEach((value, key) => {
+    object[key] = value;
+  });
+  var json = JSON.stringify(object);
+  result.innerHTML = "Please wait...";
+
+  fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json"
+    },
+    body: json
+  })
+    .then(async (response) => {
+      let json = await response.json();
+      if (response.status == 200) {
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-green-500");
+      } else {
+        console.log(response);
+        result.innerHTML = json.message;
+        result.classList.remove("text-gray-500");
+        result.classList.add("text-red-500");
+      }
+    })
+    .catch((error) => {
+      console.log(error);
+      result.innerHTML = "Something went wrong!";
+    })
+    .then(function () {
+      form.reset();
+      setTimeout(() => {
+        result.style.display = "none";
+      }, 0);
+    });
+});
+
+
+
+</script>
+</body>
+</html>

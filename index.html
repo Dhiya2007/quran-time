@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+     <title> Quran-Time</title>
+     <meta name="description" content="في هذا الموقع سوف تجد قراءات قران لكبار القراء ،بالإضافة الى امكانية تحميل كل سورة على حدا أو تحميل ملف القران كامل بصوت أي قارء تفضل برابط مباشر.">
+<meta name="keywords" content="قران, إسلام, قراءات ،محمد اللحيدان ،ياسر الدوسري ،محمد أيوب ،علي جابر ،ناصر القطامي ،مشاري العفاسي ،السديسي ،قران اونلاين">
+<meta name="author" content="Dyaa Edin">
+<meta name="robots" content="index, follow">
+<meta property="og:title" content="Quran-Time ">
+<meta property="og:description" content="في هذا الموقع سوف تجد قراءات قران لكبار القراء ،بالإضافة الى امكانية تحميل كل سورة على حدا أو تحميل ملف القران كامل بصوت أي قارء تفضل برابط مباشر.">
+<meta property="og:image" content="img/logo.webp">
+<meta property="og:type" content="website">
+<link rel="icon" href="img/logo.webp" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+   </head>
+<body>
+      <header class="navbar">
+  <input type="checkbox" id="check">
+  <label class="button bars" for="check"><i class="fas-1 fas fa-bars"></i></label>
+  <div class="side_bar">
+    <div class="title">
+      <div class="logo">استَغفِر الله </div>
+      <label class=" button cancel" for="check"><i class="fas fa-times"></i></label>
+    </div>
+    <ul>
+          <li><a href="index.html">
+<i class='bx bxs-home'></i>الرئيسية</a></li>
+          <li><a href="https://dhiya.netlify.app/"><i class='bx bxs-planet'></i>مواقعي</a></li>
+          <li><a href="https://dyacontact.netlify.app/"><i class="fas fa-phone-volume"></i>تواصل</a></li>
+          <li><a href="quraa/problems/index.html"><i class="fas fa-comments"></i>إبلاغ عن مشكل</a></li>
+        </ul>
+        <div class="media_icons">
+          <a href="https://www.facebook.com/profile.php?id=100066849774173&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/Dhiya2007"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/dyaa_edin?igsh=MWo1aHhxMTRxaGxocQ=="><i class="fab fa-instagram"></i></a>
+          <a href="http://t.me/m_dhiya_m"><i class="fab fa-telegram"></i></a>
+        </div>
+
+  </div>
+ 
+
+        <div class="navbar-content">
+            <h1>Quran-Time</h1>
+        </div>
+    </header>
+  <!-- Search Page Section -->
+    <section class="search-container">
+        <h1>محرك البحث</h1>
+        <input dir="rtl" type="text" id="searchInput" placeholder="اكتب اسم القارء ... " oninput="performSearch()">
+        <div class="results" id="searchResults"></div>
+    </section>
+    <section class="cards-section">
+      <p class="card-title">القراء</p>
+    <div class="card-container">
+        <!-- بطاقة 1 -->
+        <div class="card">
+            <a href="quraa/menchaoui.html" target="_blank">
+                <img src="img/1.webp" alt="بطاقة 1">
+                <h3> المنشاوي </h3>
+            </a>
+        </div>
+        <!-- بطاقة 2 -->
+        <div class="card">
+            <a href="quraa/kalil.html" target="_blank">
+                <img src="img/6.webp" alt="بطاقة 2">
+                <h3>الحصري</h3>
+            </a>
+        </div>
+        <!-- بطاقة 3 -->
+        <div class="card">
+            <a href="quraa/elhidan.html" target="_blank">
+                <img src="img/2.webp" alt="بطاقة 3">
+                <h3>محمد اللحيدان</h3>
+            </a>
+        </div>
+        <!-- بطاقة 4 -->
+        <div class="card">
+            <a href="quraa/y_dosari.html" target="_blank">
+                <img src="img/3.webp" alt="بطاقة 4">
+                <h3>ياسر الدوسري</h3>
+            </a>
+        </div>
+                <!-- بطاقة 5 -->
+        <div class="card">
+            <a href="quraa/afs.html" target="_blank">
+                <img src="img/7.webp" alt="بطاقة 7">
+                <h3>مشاري العفاسي</h3>
+            </a>
+        </div>
+        <!-- بطاقة 6 -->
+        <div class="card">
+            <a href="quraa/qtm.html" target="_blank">
+                <img src="img/8.webp" alt="بطاقة 7">
+                <h3>ناصر القطامي </h3>
+            </a>
+        </div>
+        <!-- بطاقة 7 -->
+        <div class="card">
+            <a href="quraa/a_jbr.html" target="_blank">
+                <img src="img/5.webp" alt="بطاقة 5">
+                <h3>علي جابر</h3>
+            </a>
+        </div>
+        <!-- بطاقة 8 -->
+        <div class="card">
+            <a href="quraa/ayoub.html" target="_blank">
+                <img src="img/4.webp" alt="بطاقة 6">
+                <h3>محمد أيوب</h3>
+            </a>
+        </div>
+        <!-- بطاقة 9 -->
+        <div class="card">
+            <a href="quraa/sds.html" target="_blank">
+                <img src="img/9.webp" alt="بطاقة 9">
+                <h3>عبدالرحمن السديس </h3>
+            </a>
+        </div>
+
+    </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <p>&copy;  Developed And Designed by   <a class="footer-dya"href="#">DYAA-EDIN </a>   </p>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/profile.php?id=100066849774173&mibextid=ZbWKwL" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+        <a href="http://t.me/m_dhiya_m" target="_blank" class="social-icon"><i class="fab fa-telegram"></i></a>
+        <a href="https://www.instagram.com/dyaa_edin?igsh=MWo1aHhxMTRxaGxocQ==" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+        <a href="https://github.com/Dhiya2007" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

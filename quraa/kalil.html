@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>  قائمة السور</title>
+    <link rel="stylesheet" href="reader.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+
+</head>
+<body>
+    
+      <header class="navbar">
+  <input type="checkbox" id="check">
+  <label class="button bars" for="check"><i class="fas-1 fas fa-bars"></i></label>
+  <div class="side_bar">
+    <div class="title">
+      <div class="logo">استَغفِر الله </div>
+      <label class=" button cancel" for="check"><i class="fas fa-times"></i></label>
+    </div>
+    <ul>
+          <li><a href="../index.html">
+<i class='bx bxs-home'></i>الرئيسية</a></li>
+          <li><a href="https://dhiya.netlify.app/"><i class='bx bxs-planet'></i>مواقعي</a></li>
+          <li><a href="https://dyacontact.netlify.app/"><i class="fas fa-phone-volume"></i>تواصل</a></li>
+          <li><a href="problems/index.html"><i class="fas fa-comments"></i>إبلاغ عن مشكل</a></li>
+        </ul>
+        <div class="media_icons">
+          <a href="https://www.facebook.com/profile.php?id=100066849774173&mibextid=ZbWKwL"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://github.com/Dhiya2007"><i class="fab fa-github"></i></a>
+          <a href="https://www.instagram.com/dyaa_edin?igsh=MWo1aHhxMTRxaGxocQ=="><i class="fab fa-instagram"></i></a>
+          <a href="http://t.me/m_dhiya_m"><i class="fab fa-telegram"></i></a>
+        </div>
+
+  </div>
+ 
+
+        <div class="navbar-content">
+            <a href="../index.html">Quran Time</a>
+        </div>
+    </header>
+    <main>
+        <section id="suras" class="suras-section">
+            <h2>تسجيلات <span class="reader-name">خليل الحصري </span></h2>
+            <ul class="suras-list">
+                <!-- مثال على سورة -->
+     
+     
+                <li class="sura-item">
+                    <span class="sura-title">سورة الفاتحة</span>
+                  <a href="https://server13.mp3quran.net/download/husr/001.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/001.mp3', 'سورة الفاتحة')">تشغيل</button>
+                </li>
+
+                <li class="sura-item">
+                  
+                    <span class="sura-title">سورة البقرة
+                
+                    </span>
+                       <a href="https://server13.mp3quran.net/download/husr/002.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/002.mp3', 'سورة البقرة')">تشغيل
+                    </button>
+                    
+                </li>
+                
+     
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة آل عمران</span>                        <a href="https://server13.mp3quran.net/download/husr/003.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/003.mp3', 'سورة آل عمران')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">
+                      سورة النساء</span>                        <a href="https://server13.mp3quran.net/download/husr/004.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/004.mp3', 'سورة النساء')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المائدة</span>                        <a href="https://server13.mp3quran.net/download/husr/005.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/005.mp3', 'سورة المائدة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الأنعام</span>                        <a href="https://server13.mp3quran.net/download/husr/006.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/006.mp3', 'سورة الأنعام')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الأعراف</span>                        <a href="https://server13.mp3quran.net/download/husr/007.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/007.mp3', 'سورة الأعراف')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الأنفال </span>                        <a href="https://server13.mp3quran.net/download/husr/008.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/008.mp3', 'سورة الأنفال ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة التوبة </span>                        <a href="https://server13.mp3quran.net/download/husr/009.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/009.mp3', 'سورة التوبة ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة يونس </span>                        <a href="https://server13.mp3quran.net/download/husr/010.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/010.mp3', 'سورة يونس ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة هود</span>                        <a href="https://server13.mp3quran.net/download/husr/011.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/011.mp3', 'سورة هود')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة يوسف</span>                        <a href="https://server13.mp3quran.net/download/husr/012.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/012.mp3', 'سورة يوسف')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الرعد</span>                        <a href="https://server13.mp3quran.net/download/husr/013.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/013.mp3', 'سورة الرعد')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة ابراهيم</span>                        <a href="https://server13.mp3quran.net/download/husr/014.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/014.mp3', 'سورة ابراهيم')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الحجر</span>                        <a href="https://server13.mp3quran.net/download/husr/015.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/015.mp3', 'سورة الحجر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة النحل</span>                        <a href="https://server13.mp3quran.net/download/husr/016.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/016.mp3', 'سورة النحل')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الإسراء</span>                        <a href="https://server13.mp3quran.net/download/husr/017.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/017.mp3', 'سورة الإسراء')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الكهف</span>                        <a href="https://server13.mp3quran.net/download/husr/018.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/018.mp3', 'سورة الكهف')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة مريم</span>                        <a href="https://server13.mp3quran.net/download/husr/019.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/019.mp3', 'سورة مريم')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة طه</span>                        <a href="https://server13.mp3quran.net/download/husr/020.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/020.mp3', 'سورة طه')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الأنبياء</span>                        <a href="https://server13.mp3quran.net/download/husr/021.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/021.mp3', 'سورة الأنبياء')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الحج</span>                        <a href="https://server13.mp3quran.net/download/husr/022.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/022.mp3', 'سورة الحج')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المؤمنون</span>                        <a href="https://server13.mp3quran.net/download/husr/023.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/023.mp3', 'سورة المؤمنون')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة النور</span>                        <a href="https://server13.mp3quran.net/download/husr/024.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/024.mp3', 'سورة النور')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الفرقان</span>                        <a href="https://server13.mp3quran.net/download/husr/025.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/025.mp3', 'سورة الفرقان')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الشعراء</span>                        <a href="https://server13.mp3quran.net/download/husr/026.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/026.mp3', 'سورة الشعراء')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة النمل</span>                        <a href="https://server13.mp3quran.net/download/husr/027.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/027.mp3', 'سورة النمل')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة القصص</span>                        <a href="https://server13.mp3quran.net/download/husr/028.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/028.mp3', 'سورة القصص')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة العنكبوت</span>                        <a href="https://server13.mp3quran.net/download/husr/029.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/029.mp3', 'سورة العنكبوت')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الروم</span>                        <a href="https://server13.mp3quran.net/download/husr/030.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/030.mp3', 'سورة الروم')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة لقمان</span>                        <a href="https://server13.mp3quran.net/download/husr/031.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/031.mp3', 'سورة لقمان')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة السجدة</span>                        <a href="https://server13.mp3quran.net/download/husr/032.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/032.mp3', 'سورة السجدة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الأحزاب </span>                        <a href="https://server13.mp3quran.net/download/husr/033.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/033.mp3', 'سورة الأحزاب ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة سبأ </span>                        <a href="https://server13.mp3quran.net/download/husr/034.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/034.mp3', 'سورة سبأ ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة فاطر </span>                        <a href="https://server13.mp3quran.net/download/husr/035.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/035.mp3', 'سورة فاطر ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة يس </span>                        <a href="https://server13.mp3quran.net/download/husr/036.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/036.mp3', 'سورة يس ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الصافات </span>                        <a href="https://server13.mp3quran.net/download/husr/037.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/037.mp3', 'سورة الصافات ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة ص </span>                        <a href="https://server13.mp3quran.net/download/husr/038.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/038.mp3', 'سورة ص')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الزمر</span>                        <a href="https://server13.mp3quran.net/download/husr/039.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/039.mp3', 'سورة الزمر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة غافر</span>                        <a href="https://server13.mp3quran.net/download/husr/040.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/040.mp3', 'سورة غافر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة فصلت</span>                        <a href="https://server13.mp3quran.net/download/husr/041.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/041.mp3', 'سورة فصلت')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الشورى</span>                        <a href="https://server13.mp3quran.net/download/husr/042.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/042.mp3', 'سورة الشورى')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الزخرف</span>                        <a href="https://server13.mp3quran.net/download/husr/043.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/043.mp3', 'سورة الزخرف')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الدخان</span>                        <a href="https://server13.mp3quran.net/download/husr/044.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/044.mp3', 'سورة الدخان')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الجاثية</span>                        <a href="https://server13.mp3quran.net/download/husr/045.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/045.mp3', 'سورة الجاثية')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الأحقاف</span>                        <a href="https://server13.mp3quran.net/download/husr/046.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/046.mp3', 'سورة الأحقاف')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة محمد</span>                        <a href="https://server13.mp3quran.net/download/husr/047.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/047.mp3', 'سورة محمد')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الفتح</span>                        <a href="https://server13.mp3quran.net/download/husr/048.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/048.mp3', 'سورة الفتح')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الحجرات</span>                        <a href="https://server13.mp3quran.net/download/husr/049.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/049.mp3', 'سورة الحجرات')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة ق</span>                        <a href="https://server13.mp3quran.net/download/husr/050.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/050.mp3', 'سورة ق')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الذريات</span>                        <a href="https://server13.mp3quran.net/download/husr/051.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/051.mp3', 'سورة الذريات')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الطور</span>                        <a href="https://server13.mp3quran.net/download/husr/052.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/052.mp3', 'سورة الطور')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة النجم</span>                        <a href="https://server13.mp3quran.net/download/husr/053.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/053.mp3', 'سورة النجم')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة القمر</span>                        <a href="https://server13.mp3quran.net/download/husr/054.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/054.mp3', 'سورة القمر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الرحمان</span>                        <a href="https://server13.mp3quran.net/download/husr/055.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/055.mp3', 'سورة الرحمان')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الواقعة </span>                        <a href="https://server13.mp3quran.net/download/husr/056.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/056.mp3', 'سورة الواقعة ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الحديد </span>                        <a href="https://server13.mp3quran.net/download/husr/057.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/057.mp3', 'سورة الحديد ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المجادلة</span>                        <a href="https://server13.mp3quran.net/download/husr/058.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/058.mp3', 'سورة المجادلة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الحشر</span>                        <a href="https://server13.mp3quran.net/download/husr/059.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/059.mp3', 'سورة الحشر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الممتحنة</span>                        <a href="https://server13.mp3quran.net/download/husr/060.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/060.mp3', 'سورة الممتحنة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الصف</span>                        <a href="https://server13.mp3quran.net/download/husr/061.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/061.mp3', 'سورة الصف')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الجمعة</span>                        <a href="https://server13.mp3quran.net/download/husr/062.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/062.mp3', 'سورة الجمعة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المنافقون</span>                        <a href="https://server13.mp3quran.net/download/husr/063.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/063.mp3', 'سورة المنافقون')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة التغابن</span>                        <a href="https://server13.mp3quran.net/download/husr/064.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/064.mp3', 'سورة التغابن')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الطلاق</span>                        <a href="https://server13.mp3quran.net/download/husr/065.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/065.mp3', 'سورة الطلاق')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة التحريم</span>                        <a href="https://server13.mp3quran.net/download/husr/066.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/066.mp3', 'سورة التحريم')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الملك</span>                        <a href="https://server13.mp3quran.net/download/husr/067.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/067.mp3', 'سورة الملك')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة القلم</span>                        <a href="https://server13.mp3quran.net/download/husr/068.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/068.mp3', 'سورة القلم')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الحاقة</span>                        <a href="https://server13.mp3quran.net/download/husr/069.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/069.mp3', 'سورة الحاقة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المعارج</span>                        <a href="https://server13.mp3quran.net/download/husr/070.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/070.mp3', 'سورة المعارج')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة نوح</span>                        <a href="https://server13.mp3quran.net/download/husr/071.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/071.mp3', 'سورة نوح')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الجن</span>                        <a href="https://server13.mp3quran.net/download/husr/072.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/072.mp3', 'سورة الجن')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المزمل</span>                        <a href="https://server13.mp3quran.net/download/husr/073.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/073.mp3', 'سورة المزمل')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المدثر</span>                        <a href="https://server13.mp3quran.net/download/husr/074.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/074.mp3', 'سورة المدثر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة القيامة</span>                        <a href="https://server13.mp3quran.net/download/husr/075.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/075.mp3', 'سورة القيامة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الإنسان</span>                        <a href="https://server13.mp3quran.net/download/husr/076.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/076.mp3', 'سورة الإنسان')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المرسلات</span>                        <a href="https://server13.mp3quran.net/download/husr/077.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/077.mp3', 'سورة المرسلات')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة النبأ</span>                        <a href="https://server13.mp3quran.net/download/husr/078.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/078.mp3', 'سورة النبأ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة النازعات</span>                        <a href="https://server13.mp3quran.net/download/husr/079.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/079.mp3', 'سورة النازعات')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة عبس</span>                        <a href="https://server13.mp3quran.net/download/husr/080.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/080.mp3', 'سورة عبس')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة التكوير</span>                        <a href="https://server13.mp3quran.net/download/husr/081.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/081.mp3', 'سورة التكوير')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الانفطار</span>                        <a href="https://server13.mp3quran.net/download/husr/082.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/082.mp3', 'سورة الانفطار')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المطففين</span>                        <a href="https://server13.mp3quran.net/download/husr/083.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/083.mp3', 'سورة المطففين')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الإنشقاق</span>                        <a href="https://server13.mp3quran.net/download/husr/084.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/084.mp3', 'سورة الإنشقاق')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة البروج</span>                        <a href="https://server13.mp3quran.net/download/husr/085.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/085.mp3', 'سورة البروج')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الطارق</span>                        <a href="https://server13.mp3quran.net/download/husr/086.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/086.mp3', 'سورة الطارق')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الأعلى </span>                        <a href="https://server13.mp3quran.net/download/husr/087.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/087.mp3', 'سورة الأعلى ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الغاشية </span>                        <a href="https://server13.mp3quran.net/download/husr/088.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/088.mp3', 'سورة الغاشية ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الفجر </span>                        <a href="https://server13.mp3quran.net/download/husr/089.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/089.mp3', 'سورة الفجر ')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة البلد</span>                        <a href="https://server13.mp3quran.net/download/husr/090.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/090.mp3', 'سورة البلد')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الشمس</span>                        <a href="https://server13.mp3quran.net/download/husr/091.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/091.mp3', 'سورة الشمس')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الليل</span>                        <a href="https://server13.mp3quran.net/download/husr/092.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/092.mp3', 'سورة الليل')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الضحى</span>                        <a href="https://server13.mp3quran.net/download/husr/093.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/093.mp3', 'سورة الضحى')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الشرح</span>                        <a href="https://server13.mp3quran.net/download/husr/094.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/094.mp3', 'سورة الشرح')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة التين</span>                        <a href="https://server13.mp3quran.net/download/husr/095.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/095.mp3', 'سورة التين')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة العلق</span>                        <a href="https://server13.mp3quran.net/download/husr/096.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/096.mp3', 'سورة العلق')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة القدر</span>                        <a href="https://server13.mp3quran.net/download/husr/097.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/097.mp3', 'سورة القدر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة البينة</span>                        <a href="https://server13.mp3quran.net/download/husr/098.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/098.mp3', 'سورة البينة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الزلزلة</span>                        <a href="https://server13.mp3quran.net/download/husr/099.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/099.mp3', 'سورة الزلزلة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة العاديات</span>                        <a href="https://server13.mp3quran.net/download/husr/100.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/100.mp3', 'سورة العاديات')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة القارعة</span>                        <a href="https://server13.mp3quran.net/download/husr/101.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/101.mp3', 'سورة القارعة')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة التكاثر</span>                        <a href="https://server13.mp3quran.net/download/husr/102.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/102.mp3', 'سورة التكاثر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة العصر</span>                        <a href="https://server13.mp3quran.net/download/husr/103.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/103.mp3', 'سورة العصر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الهمزه</span>                        <a href="https://server13.mp3quran.net/download/husr/104.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/104.mp3', 'سورة الهمزه')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الفيل</span>                        <a href="https://server13.mp3quran.net/download/husr/105.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/105.mp3', 'سورة الفيل')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة قريش</span>                        <a href="https://server13.mp3quran.net/download/husr/106.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/106.mp3', 'سورة قريش')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الماعون</span>                        <a href="https://server13.mp3quran.net/download/husr/107.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/107.mp3', 'سورة الماعون')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الكوثر</span>                        <a href="https://server13.mp3quran.net/download/husr/108.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/108.mp3', 'سورة الكوثر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الكافرون</span>                        <a href="https://server13.mp3quran.net/download/husr/109.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/109.mp3', 'سورة الكافرون')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة النصر</span>                        <a href="https://server13.mp3quran.net/download/husr/110.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/110.mp3', 'سورة النصر')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة المسد</span>                        <a href="https://server13.mp3quran.net/download/husr/111.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/111.mp3', 'سورة المسد')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الإخلاص</span>                        <a href="https://server13.mp3quran.net/download/husr/112.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/112.mp3', 'سورة الإخلاص')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الفلق</span>                        <a href="https://server13.mp3quran.net/download/husr/113.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/113.mp3', 'سورة الفلق')">تشغيل</button>
+                </li>
+                
+
+                <li class="sura-item">
+                    <span class="sura-title">سورة الناس</span>                        <a href="https://server13.mp3quran.net/download/husr/114.mp3"><i class='bx bxs-download' ></i></a>
+                    <button onclick="playAudio('https://server13.mp3quran.net/husr/114.mp3', 'سورة الناس')">تشغيل</button>
+                </li>
+   
+  
+     
+
+                
+                <!-- تكرار للسور الأخرى -->
+            </ul>
+
+        </section>
+
+<!-- Music Player -->
+<div id="musicPlayer" class="music-player hidden">
+    <div class="player-header">
+        <span id="currentSura" class="sura-name">سورة الفاتحة</span>
+        <!-- زر إغلاق Music Player -->
+        <button class="close-musicplayer-btn" onclick="closeMusicPlayer()">×</button>
+    </div>
+    <div class="player-controls">
+        <button onclick="" class="control-btn">⏮</button>
+        <button id="playPauseButton" onclick="togglePlay()" class="control-btn">تشغيل</button>
+        <button onclick="" class="control-btn">⏭</button>
+    </div>
+    <div class="progress-container">
+        <!-- شريط التقدم -->
+        <input type="range" id="seekBar" value="0" step="1">
+    </div>
+        <button class="full-screen-btn" onclick="showFullScreenPlayer()">️ادغط هنا لعرض شاشة كاملة</button>
+
+</div>
+
+<!-- Full-Screen Music Player -->
+<div id="fullScreenPlayer" class="full-screen-player hidden">
+    <div class="player-header">
+        <span id="currentSuraFullScreen" class="sura-name">سورة الفاتحة</span>
+        <button class="close-fullscreen-btn" onclick="closeFullScreenPlayer()">×</button>
+    </div>
+    <img class="yasser mjpg" src="img/6.jpg" alt="Image">
+    <div class="player-controls">
+        <button onclick="" class="control-btn">⏮</button>
+        <button id="playPauseButtonFullScreen" onclick="togglePlayFullScreen()" class="control-btn">تشغيل</button>
+        <button onclick="" class="control-btn">⏭</button>
+    </div>
+    <div class="progress-container">
+        <input type="range" id="seekBarFullScreen" value="0" step="1">
+    </div>
+    <div class="volume-control">
+        <h3 class="center">:التحكم في الصوت </h3>
+         <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1">
+    </div>
+</div>
+
+
+
+    </main>
+        <section class="card-container">
+            <div class="card">
+                <h2>تحميل القرآن كامل بصوت  محمود خليل الحصري </h2>
+                <p>يمكنك تحميل القرآن كامل بصوت محمود خليل الحصري  من خلال هذا الزر</p>
+                <a href="https://ia600405.us.archive.org/16/items/TvQuran.com__Al-HussaryZip/TvQuran.com__Al-Hussary.zip" class="download-btn">تحميل القرآن كامل</a>
+            </div>
+        </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 استماع للقرآن عبر الإنترنت</p>
+        </div>
+    </footer>
+
+    <script src="reader.js"></script>
+</body>
+</html>
